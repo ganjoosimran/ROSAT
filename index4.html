@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+  <title>ROSAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="cssR/style1.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/script1.js"></script>
+
+  </head>
+
+
+<body>
+  <div class="container">
+    <div class="progress">
+  <div class="progress-bar progress-bar-default progress-bar-striped" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+    100% Complete (success)
+  </div>
+
+  </div>
+  <form method="post" onsubmit="return validateForm(this);" class="list-form">
+      <!--Curricular, Co-curricular, extra-curricular information-->
+
+    <h4><strong>Curricular, Co-curricular, extra-curricular information</strong></h4>
+    <hr>
+    <div class="div81">
+    <h4><strong>Curricular</strong></h4>
+    <div class="div811">
+    <div class="element-radio">
+        <label class="title">Awards</label>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+                <span>Best Student</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+                <span>School Captain</span>
+            </label>
+        </div>
+        <div class="column column11">
+            <label>
+                <input type="radio" name="childrend" value="Yes" onChange="findselectedd()"/>
+                <span>House/Club Captain</span>
+            </label>
+        </div>
+        <div class="column column12">
+            <label>
+                <input type="radio"  name="childrend" value="No" checked="checked" onChange="findselectedd()"/>
+                <span>Other</span>
+                <div class="form-group">
+                 <input type="text" id="inputtextd" class="form-control"  placeholder="Mention">
+                </div>
+            </label>
+        </div>
+        <span class="clearfix"></span>
+    </div>
+    <div class="form-group">
+        <label for="InputFile">Attach file</label>
+        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+        <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+      </div>
+    </div>
+    </div>
+
+    <!--- co - curricular-->
+
+
+      <div class="div82">
+      <h4><strong>Co-Curricular</strong></h4>
+      <div class="div821">
+      <div class="form-group">
+       <label for="text-input">Name Technical Skill</label>
+       <input type="text" class="form-control"  placeholder="Technical Skill ">
+      </div>
+      <div class="element-radio">
+          <label class="title">Type</label>
+          <div class="column column11">
+              <label>
+                  <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+                  <span>Training</span>
+              </label>
+          </div>
+          <div class="column column11">
+              <label>
+                  <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+                  <span>Workshop</span>
+              </label>
+          </div>
+          <div class="column column11">
+              <label>
+                  <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+                  <span>Certification Course</span>
+              </label>
+          </div>
+          <div class="column column11">
+              <label>
+                  <input type="radio" name="childrene" value="Yes" onChange="findselectede()"/>
+                  <span>Self Trained</span>
+              </label>
+          </div>
+          <div class="column column12">
+              <label>
+                  <input type="radio"  name="childrene" value="No" checked="checked" onChange="findselectede()"/>
+                  <span>Other</span>
+                  <div class="form-group">
+                   <input type="text" id="inputtexte" class="form-control"  placeholder="Mention">
+                  </div>
+              </label>
+          </div>
+          <span class="clearfix"></span>
+      </div>
+      <div class="form-group">
+          <label for="InputFile">Attach file</label>
+          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+        </div>
+
+
+        <div class="form-group">
+         <label for="text-input">Inter-school/ inter college Competition</label>
+         <input type="text" class="form-control"  placeholder="Technical Skill ">
+        </div>
+        <div class="element-radio">
+            <label class="title">Type</label>
+            <div class="column column11">
+                <label>
+                    <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                    <span>Technical/Science Quiz</span>
+                </label>
+            </div>
+            <div class="column column11">
+                <label>
+                    <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                    <span>Debate</span>
+                </label>
+            </div>
+            <div class="column column11">
+                <label>
+                    <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                    <span>Group discussion</span>
+                </label>
+            </div>
+            <div class="column column11">
+                <label>
+                    <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                    <span>Essay writing</span>
+                </label>
+            </div>
+            <div class="column column11">
+                <label>
+                    <input type="radio" name="childrenf" value="Yes" onChange="findselectedf()"/>
+                    <span>Paper presentation, Science projects</span>
+                </label>
+            </div>
+            <div class="column column12">
+                <label>
+                    <input type="radio"  name="childrenf" value="No" checked="checked" onChange="findselectedf()"/>
+                    <span>Other</span>
+                    <div class="form-group">
+                     <input type="text" id="inputtextf" class="form-control"  placeholder="Mention">
+                    </div>
+                </label>
+            </div>
+            <span class="clearfix"></span>
+        </div>
+        <div class="form-group">
+            <label for="InputFile">Attach file</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+          </div>
+    </div>
+    </div>
+    <br>
+
+    <!-- Extra curricular-->
+
+      <h4><strong>Extra-Curricular</strong></h4>
+      <hr>
+      <div class="div91">
+          <h4><strong>Sports</strong></h4>
+          <div class="div911">
+          <div class="form-group">
+           <label for="text-input">Name</label>
+           <input type="text" class="form-control"  placeholder="Sport">
+          </div>
+          <div class="form-group">
+              <label for="Select1">Capacity at which you participated</label>
+              <select class="form-control" >
+                <option>Inter-school/Inter-state</option>
+                <option>Taluk</option>
+                <option>District</option>
+                <option>State</option>
+                <option>National</option>
+                <option>International</option>
+                <option>None</option>
+               </select>
+            </div>
+          <div class="form-group">
+              <label for="InputFile">Attach file</label>
+              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+            </div>
+    </div>
+    </div>
+    <div class="div92">
+            <h4><strong>Cultural</strong></h4>
+            <div class="div921">
+            <div class="form-group">
+             <label for="text-input">Name(Discipline: singing, instrumental, Dance, theaters)</label>
+             <input type="text" class="form-control"  placeholder="Discipline">
+            </div>
+            <div class="form-group">
+                <label for="InputFile">Attach file for certification if any</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+              </div>
+            <div class="form-group">
+                <label for="Select1">Capacity at which you participated</label>
+                <select class="form-control" >
+                  <option>Inter-school/Inter-state</option>
+                  <option>Taluk</option>
+                  <option>District</option>
+                  <option>State</option>
+                  <option>National</option>
+                  <option>International</option>
+                  <option>None</option>
+                 </select>
+              </div>
+            <div class="form-group">
+                <label for="InputFile">Attach file</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+              </div>
+            </div>
+          </div>
+          <br>
+  <br>
+    <br>
+  <hr>
+<button type="submit" class="btn btn-warning">Submit</button>
+</form>
+</div>
+</body>
+</html>

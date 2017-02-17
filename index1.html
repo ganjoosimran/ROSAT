@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+  <title>ROSAT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="cssR/style1.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/script1.js"></script>
+
+  </head>
+
+
+<body>
+  <div class="bar">
+
+  <div class="container">
+    <div class="progress">
+  <div class="progress-bar progress-bar-default progress-bar-striped" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+    25% Complete (success)
+  </div>
+  </div>
+
+    <!-- personal details here-->
+    <h3>Personal Details</h3>
+    <hr>
+  <div class="personal">
+    <form method="post" onsubmit="return validateForm(this);" class="list-form">
+    <h4><strong>Student's Details</strong></h4>
+      <hr>
+    <div class="div1">
+    <div class="form-group row">
+      <label for="text-input">Student's Name</label>
+        <div class="col-10">
+          <input class="form-control" type="text" placeholder="Enter your name" required>
+        </div>
+    </div>
+    <fieldset class="form-group">
+    <legend>Gender</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option1" checked>
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option2">
+        Female
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" name="optionsRadios" value="option3">
+        Other
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-group">
+    <label for="usn-input">USN</label>
+    <input type="text" class="form-control" placeholder="Enter USN">
+  </div>
+  <div class="form-group">
+   <label for="InputEmail1">Email address</label>
+   <input type="email" class="form-control"  placeholder="Enter email">
+   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ </div>
+ <div class="form-group">
+   <label for="phone-input">Phone No</label>
+   <input type="tel" class="form-control" placeholder="Phone No.">
+ </div>
+ <div class="form-group row">
+ <label for="date-input" class="col-2 col-form-label">Date of Birth</label>
+ <div class="col-10">
+   <input class="form-control" type="date" placeholder ="yyyy-mm-dd">
+ </div>
+ <br>
+</div>
+</div>
+
+
+<!-- Father's Details-->
+
+ <h4><strong>Father's Details</strong></h4>
+ <hr>
+ <div class="div2">
+ <div class="form-group row">
+ <label for="text-input">Father's Name</label>
+  <div class="col-10">
+   <input class="form-control" type="text" placeholder="Father's name">
+   </div>
+ </div>
+ <div class="form-group">
+     <label for="Select1">Qualification</label>
+     <select class="form-control" >
+       <option>Doctrate</option>
+       <option>PG</option>
+       <option>UG</option>
+       <option>Higher Secondary</option>
+       <option>Diploma</option>
+       <option>Matriculation</option>
+       <option>Below Matriculation</option>
+       <option>No Formal Education</option>
+     </select>
+   </div>
+   <div class="form-group">
+       <label for="Select1">Occupation</label>
+       <select class="form-control" >
+         <option>Profesional</option>
+         <option>Business</option>
+         <option>Government Services</option>
+         <option>No Employement</option>
+       </select>
+     </div>
+<div class="form-group">
+ <label for="text-input">Annual income</label>
+ <input type="text" class="form-control"  placeholder="Enter anual income">
+</div>
+<div class="form-group">
+ <label for="InputEmail1">Email address</label>
+ <input type="email" class="form-control"  placeholder="Enter email">
+ <small  class="form-text text-muted">We'll never share this email with anyone else.</small>
+</div>
+<div class="form-group">
+  <label for="phone-input">Phone No</label>
+  <input type="tel" class="form-control" placeholder="Phone No.">
+</div>
+</div>
+<br>
+
+<!--Mother's Details-->
+
+<h4><strong>Mother's Details</strong></h4>
+<hr>
+<div class="div3">
+<div class="form-group row">
+<label for="text-input">Mother's Name</label>
+ <div class="col-10">
+  <input class="form-control" type="text" placeholder="Mother's name">
+  </div>
+</div>
+<div class="form-group">
+    <label for="Select1">Qualification</label>
+    <select class="form-control" >
+      <option>Doctrate</option>
+      <option>PG</option>
+      <option>UG</option>
+      <option>Higher Secondary</option>
+      <option>Diploma</option>
+      <option>Matriculation</option>
+      <option>Below Matriculation</option>
+      <option>No Formal Education</option>
+    </select>
+  </div>
+  <div class="form-group">
+      <label for="Select1">Occupation</label>
+      <select class="form-control" >
+        <option>Profesional</option>
+        <option>Business</option>
+        <option>Government Services</option>
+        <option>Home Maker</option>
+      </select>
+    </div>
+<div class="form-group">
+<label for="text-input">Annual income</label>
+<input type="text" class="form-control"  placeholder="Enter anual income">
+</div>
+<div class="form-group">
+<label for="InputEmail1">Email address</label>
+<input type="email" class="form-control"  placeholder="Enter email">
+<small id="emailHelp" class="form-text text-muted">We'll never share this email with anyone else.</small>
+</div>
+<div class="form-group">
+ <label for="phone-input">Phone No</label>
+ <input type="tel" class="form-control" placeholder="Phone No.">
+</div>
+</div>
+<br>
+
+<br>
+</div>
+<div class="link">
+<a href="index2.html">Continue</a>
+</div>
+</din>
+</div>
+</body>
+</html>
