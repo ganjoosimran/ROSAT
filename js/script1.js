@@ -38,36 +38,7 @@ function findselectedc() {
         document.getElementById("inputtextc").removeAttribute('disabled');
     }
 }
-function findselectedd() {
-    var result = document.querySelector('input[name="childrend"]:checked').value;
-    if(result=="Yes"){
 
-        document.getElementById("inputtextd").setAttribute('disabled', true);
-    }
-    else{
-        document.getElementById("inputtextd").removeAttribute('disabled');
-    }
-}
-function findselectede() {
-    var result = document.querySelector('input[name="childrene"]:checked').value;
-    if(result=="Yes"){
-
-        document.getElementById("inputtexte").setAttribute('disabled', true);
-    }
-    else{
-        document.getElementById("inputtexte").removeAttribute('disabled');
-    }
-}
-function findselectedf() {
-    var result = document.querySelector('input[name="childrenf"]:checked').value;
-    if(result=="Yes"){
-
-        document.getElementById("inputtextf").setAttribute('disabled', true);
-    }
-    else{
-        document.getElementById("inputtextf").removeAttribute('disabled');
-    }
-}
 function findselected() {
     var result = document.querySelector('input[name="children"]:checked').value;
     if(result=="Yes"){

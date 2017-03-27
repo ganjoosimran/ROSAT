@@ -1,190 +1,791 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>ROSAT</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="cssR/style1.css" rel="stylesheet">
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/script1.js"></script>
 
-  </head>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ROSAT</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		    <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="js/script1.js"></script>
 
 
-<body>
-  <div class="bar">
 
-  <div class="container">
-    <div class="progress">
-  <div class="progress-bar progress-bar-default progress-bar-striped" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-    25% Complete (success)
-  </div>
-  </div>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-    <!-- personal details here-->
-    <h3>Personal Details</h3>
-    <hr>
-  <div class="personal">
-    <form method="post" onsubmit="return validateForm(this);" class="list-form">
-    <h4><strong>Student's Details</strong></h4>
-      <hr>
-    <div class="div1">
-    <div class="form-group row">
-      <label for="text-input">Student's Name</label>
-        <div class="col-10">
-          <input class="form-control" type="text" placeholder="Enter your name" required>
+        <!-- Favicon and touch icons -->
+
+    </head>
+
+    <body>
+
+		<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        <!-- Top content -->
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>ROSAT</strong></h1>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+
+                        	<form role="form" action="index2.html" method="post" class="registration-form">
+
+                        		<fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 1 / 9</h3>
+		                            		<p>Personal Details:</p>
+		                        		</div>
+		                        		<div class="form-top-right">
+
+		                        		</div>
+		                            </div>
+		                            <div class="form-bottom">
+                                  <div class="form-group">
+                                    <label for="sname-input">Student's Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter name" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="Gender-sel">Gender</label>
+                                    <select class="form-control">
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Other</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="usn-input">USN</label>
+                                  <input type="text" class="form-control" placeholder="Enter USN" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="aadhaar-input">Aadhar Number</label>
+                                  <input type="text" class="form-control" placeholder="Enter Aadhar">
+                                </div>
+                                <div class="form-group">
+                                  <label for="date-input" class="col-form-label">Date of Birth</label>
+                                  <div class="col-10 date">
+                                    <input class="form-control" type="date" placeholder="yyyy-mm-dd" required>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-quota">Admitted under quota</label>
+                                  <select class="form-control">
+                                    <option>Rural Candidates</option>
+                                    <option>Kannada Medium</option>
+                                    <option>Jammu and Kashmir Migrants</option>
+                                    <option>OBC under category - 1, 2A, 2B, 3A, 3B</option>
+                                    <option>SC under category - 1, 2A, 2B, 3A, 3B</option>
+                                    <option>ST under category - 1, 2A, 2B, 3A, 3B</option>
+                                    <option>Defence Personnel of Karnataka Origin</option>
+                                    <option>Sports Special Category</option>
+                                    <option>Scouts and Guides</option>
+                                    <option>NCC Category</option>
+                                    <option>Supernumerary Category</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Qualf-sel">Gender</label>
+                                  <select class="form-control">
+                                    <option>CET</option>
+                                    <option>COMEDK</option>
+                                    <option>None</option>
+                                </select>
+                              </div>
+                                <div class="form-group">
+                                  <label for="Email-stud">Email address</label>
+                                  <input type="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="sphone-input">Phone No</label>
+                                  <input type="tel" class="form-control" placeholder="Phone No." required>
+                                </div>
+				                        <button type="button" class="btn btn-next">Next</button>
+				                    </div>
+			                    </fieldset>
+
+                          <fieldset>
+                            <div class="form-top">
+                              <div class="form-top-left">
+                                <h3>Step 2 / 9</h3>
+                                  <p>Parents/Guardian's Details:</p>
+                              </div>
+                              <div class="form-top-right">
+
+                              </div>
+
+                              <div class="form-bottom">
+                                <h3>Father's/Primary Guardian's Details</h3>
+                                <div class="form-group">
+                                  <label for="fname-input"> Name</label>
+                                  <input type="text" class="form-control" placeholder="Enter name" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-qualif">Qualification</label>
+                                  <select class="form-control">
+                                    <option>Doctrate</option>
+                                    <option>PG</option>
+                                    <option>UG</option>
+                                    <option>Higher Secondary</option>
+                                    <option>Diploma</option>
+                                    <option>Matriculation</option>
+                                    <option>Below Matriculation</option>
+                                    <option>No Formal Education</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-occuf">Occupation</label>
+                                  <select class="form-control">
+                                    <option>Profesional</option>
+                                    <option>Business</option>
+                                    <option>Government Services</option>
+                                    <option>No Employement</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-fincome">Annual Income</label>
+                                  <select class="form-control">
+                                    <option>N.A.</option>
+                                    <option>upto 100000</option>
+                                    <option>100000-300000</option>
+                                    <option>300000-500000</option>
+                                    <option>500000-700000</option>
+                                    <option>700000-900000</option>
+                                    <option>900000-1100000</option>
+                                    <option>1100000-1300000</option>
+                                    <option>1300000-1500000</option>
+                                    <option>1500000-1700000</option>
+                                    <option>1700000-1900000</option>
+                                    <option>above 1900000</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Email-fat">Email address</label>
+                                  <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="phonef-input">Phone No</label>
+                                  <input type="tel" class="form-control" placeholder="Phone No." required>
+                                </div>
+                                <h3>Mother's/Secondary Guardians Details</h3>
+                                <div class="form-group">
+                                  <label for="mname-input"> Name</label>
+                                  <input type="text" class="form-control" placeholder="Enter name" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-qualim">Qualification</label>
+                                  <select class="form-control">
+                                    <option>Doctrate</option>
+                                    <option>PG</option>
+                                    <option>UG</option>
+                                    <option>Higher Secondary</option>
+                                    <option>Diploma</option>
+                                    <option>Matriculation</option>
+                                    <option>Below Matriculation</option>
+                                    <option>No Formal Education</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-occum">Occupation</label>
+                                  <select class="form-control">
+                                    <option>Profesional</option>
+                                    <option>Business</option>
+                                    <option>Government Services</option>
+                                    <option>Housewife</option>
+                                    <option>No Employement</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="Select-mincome">Annual Income</label>
+                                  <select class="form-control">
+                                    <option>N.A.</option>
+                                    <option>upto 100000</option>
+                                    <option>100000-300000</option>
+                                    <option>300000-500000</option>
+                                    <option>500000-700000</option>
+                                    <option>700000-900000</option>
+                                    <option>900000-1100000</option>
+                                    <option>1100000-1300000</option>
+                                    <option>1300000-1500000</option>
+                                    <option>1500000-1700000</option>
+                                    <option>1700000-1900000</option>
+                                    <option>above 1900000</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-groupm">
+                                  <label for="Email-mat">Email address</label>
+                                  <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-groupn">
+                                  <label for="phonef-input">Phone No</label>
+                                  <input type="telm" class="form-control" placeholder="Phone No." required>
+                                </div>
+                              </div>
+                              <button type="button" class="btn btn-next">Next</button>
+                          </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                          <div class="form-top">
+                            <div class="form-top-left">
+                              <h3>Step 3 / 9</h3>
+                                <p>Contact Information:</p>
+                            </div>
+                            <div class="form-top-right">
+
+                            </div>
+                            </div>
+                            <div class="form-bottom">
+                              <div class="form-group">
+                                <label for="Present Addreass">Present address</label>
+                                <textarea class="form-control" rows="8"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="Permanent Addreass">Permanent address</label>
+                                <textarea class="form-control" rows="8"></textarea>
+                              </div>
+
+                            <button type="button" class="btn btn-next">Next</button>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <div class="form-top">
+                          <div class="form-top-left">
+                            <h3>Step 4 / 9</h3>
+                              <p>10th School Information:</p>
+                          </div>
+                        </div>
+                          <div class="form-bottom">
+                        <div class="form-group">
+                          <label for="schoolName-input">School Name</label>
+                          <input type="text" class="form-control" placeholder="Enter School">
+                        </div>
+                          <div class="form-group">
+                            <label for="School-type">School Type</label>
+                            <select class="form-control">
+                              <option>Public</option>
+                              <option>Private</option>
+                              <option>Government</option>
+                              <option>Semi-Government</option>
+                              <option>Home School</option>
+                            </select>
+                            </div>
+                          <div class="form-group">
+                            <label for="Board10-type">Board</label>
+                            <select class="form-control">
+                              <option>CBSE</option>
+                              <option>ICSE</option>
+                              <option>State</option>
+                            </select>
+                          </div>
+                          <div class="form group">
+                            <div class="form-group">
+                                <label for="Select-board-state">State</label>
+                                <select class="form-control">
+                                    <option>Andaman & NIcobar Islands</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chandigarh</option>
+                                    <option>Chattisgarh</option>
+                                    <option>Dadra And Nagar Haveli</option>
+                                    <option>Daman and Diu</option>
+                                    <option>New Delhi</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jammu & Kashmir</option>
+                                    <option>Jharkhand</option>
+                                    <option>Krnataka</option>
+                                    <option>Kerela</option>
+                                    <option>Lakshadweep</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Puducherry</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div>
+                                   <label class="form-check-label">
+                                       <input type="radio" name="optionsRadios3" value="option1" checked>
+                                       GPA
+                                   </label>
+                               </div>
+                                 <div>
+                                   <label class="form-check-label">
+                                       <input type="radio" name="optionsRadios3" value="option1" checked>
+                                       Percentage
+                                   </label>
+                               </div>
+                          </div>
+                          <div class="form-group">
+                          <label for="score-input">Score</label>
+                          <input type="text" class="form-control" placeholder="Enter Score">
+                          </div>
+
+                          <button type="button" class="btn btn-next">Next</button>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="form-top">
+                        <div class="form-top-left">
+                          <h3>Step 5 / 9</h3>
+                            <p>Diploma/School/College Information:</p>
+                        </div>
+                        </div>
+
+                        <div class="form-bottom">
+                        <div class="form-group">
+                        <label for="schoolName-input">School/College Name</label>
+                        <input type="text" class="form-control" placeholder="Enter School">
+                        </div>
+                        <div class="form-group">
+                          <label for="School-type">School/College Type</label>
+                          <select class="form-control">
+                            <option>Public</option>
+                            <option>Private</option>
+                            <option>Government</option>
+                            <option>Semi-Government</option>
+                            <option>Home School</option>
+                          </select>
+                          </div>
+                        <div class="form-group">
+                          <label for="Board12-type">Board</label>
+                          <select class="form-control">
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>State</option>
+                          </select>
+                        </div>
+                        <div class="form group">
+                          <div class="form-group">
+                              <label for="Select-board-state">State</label>
+                              <select class="form-control">
+                                  <option>Andaman & NIcobar Islands</option>
+                                  <option>Andhra Pradesh</option>
+                                  <option>Arunachal Pradesh</option>
+                                  <option>Assam</option>
+                                  <option>Bihar</option>
+                                  <option>Chandigarh</option>
+                                  <option>Chattisgarh</option>
+                                  <option>Dadra And Nagar Haveli</option>
+                                  <option>Daman and Diu</option>
+                                  <option>New Delhi</option>
+                                  <option>Goa</option>
+                                  <option>Gujarat</option>
+                                  <option>Haryana</option>
+                                  <option>Himachal Pradesh</option>
+                                  <option>Jammu & Kashmir</option>
+                                  <option>Jharkhand</option>
+                                  <option>Krnataka</option>
+                                  <option>Kerela</option>
+                                  <option>Lakshadweep</option>
+                                  <option>Madhya Pradesh</option>
+                                  <option>Maharashtra</option>
+                                  <option>Manipur</option>
+                                  <option>Meghalaya</option>
+                                  <option>Mizoram</option>
+                                  <option>Nagaland</option>
+                                  <option>Odisha</option>
+                                  <option>Puducherry</option>
+                                  <option>Punjab</option>
+                                  <option>Rajasthan</option>
+                                  <option>Sikkim</option>
+                                  <option>Tamil Nadu</option>
+                                  <option>Telangana</option>
+                                  <option>Tripura</option>
+                                  <option>Uttar Pradesh</option>
+                                  <option>Uttarakhand</option>
+                                  <option>West Bengal</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-group">
+                            <label for="Select-medium">Medium</label>
+                            <input class="form-control" list="medium" name="medium"/>
+                            <datalist id="medium">
+                              <option value="English">
+                              <option value="Hindi">
+                              <option value="Kannada">
+                              <option value="Telegu">
+                              <option value="Tamil">
+                              <option value="Punjabi">
+                              <option value="Malyalam">
+                            </datalist>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <div>
+                                 <label class="form-check-label">
+                                     <input type="radio" name="optionsRadios3" value="option1" checked>
+                                     GPA
+                                 </label>
+                             </div>
+                               <div>
+                                 <label class="form-check-label">
+                                     <input type="radio" name="optionsRadios3" value="option1" checked>
+                                     Percentage
+                                 </label>
+                             </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="score-input">Score</label>
+                        <input type="text" class="form-control" placeholder="Enter Score">
+                        </div>
+
+
+                        <button type="button" class="btn btn-next">Next</button>
+                    </div>
+                  </fieldset>
+
+			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 6 / 9</h3>
+		                            		<p>Event Information:</p>
+		                        		</div>
+
+		                            </div>
+		                            <div class="form-bottom">
+                                  <div class="form-group">
+                                  <label for="Event-name">Event name</label>
+                                  <input type="text" class="form-control" placeholder="None">
+                                  </div>
+
+                                    <div class="form-group">
+                                      <label for="ELevel">Event Level</label>
+                                      <select class="form-control">
+                                        <option>District</option>
+                                        <option>State</option>
+                                        <option>National</option>
+                                        <option>Internatinal</option>
+                                        <option>None</option>
+                                      </select>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="certi-id1">Certificate ID</label>
+                                      <input type="text" class="form-control" placeholder="None">
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="Issuing">Issuing Authority</label>
+                                      <input type="text" class="form-control" placeholder="None">
+                                      </div>
+
+                                          <div class="form-group">
+                                            <label for="date-input" class="col-form-label">Certificate Earned Date</label>
+                                            <div class="col-10 date">
+                                              <input class="form-control" type="date" placeholder="yyyy-mm-dd" required>
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="InputFile">Certificate Photo</label>
+                                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                            <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+                                          </div>
+                                          <div class="form-group">
+                                          <label for="position">Position</label>
+                                          <input type="text" class="form-control" placeholder="None">
+                                          </div>
+
+				                        <button type="button" class="btn btn-next">Next</button>
+				                    </div>
+			                    </fieldset>
+                          <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 7 / 9</h3>
+		                            		<p>Skill Set Information:</p>
+		                        		</div>
+
+		                            </div>
+		                            <div class="form-bottom">
+
+                                  <div class="area form-group">
+                                      <label  for="Skills">Skill</label>
+                                    <input class="form-control" list="skills" name="skills" type="text"/>
+                                    <datalist id="skills">
+                                   <option value="None">
+                                   <option value="Analytics">
+                                   <option value="Analytical">
+                                   <option value="Applications">
+                                   <option value="Application Development">
+                                   <option value="Big Data">
+                                   <option value="Business Analytics">
+                                   <option value="Business Intelligence">
+                                   <option value="Business Process Modeling">
+                                   <option value="Cloud Computing">
+                                   <option value="Code">
+                                   <option value="Coding">
+                                   <option value="Computer">
+                                   <option value="Communication">
+                                   <option value="Content Strategy">
+                                   <option value="Content Management">
+                                   <option value="Configuration">
+                                   <option value="Critical Thinking">
+                                   <option value="Customer Support">
+                                   <option value="Database">
+                                   <option value="Data Analysis">
+                                   <option value="Data Analytics">
+                                   <option value="Data Intelligence">
+                                   <option value="Data Mining">
+                                   <option value="Data Science">
+                                   <option value="Data Strategy">
+                                   <option value="Data Storage">
+                                   <option value="Database Administration">
+                                   <option value="Design">
+                                   <option value="Desktop Support">
+                                   <option value="Developer">
+                                   <option value="Development">
+                                   <option value="Documentation">
+                                   <option value="Emerging Technologies">
+                                   <option value="File Systems">
+                                   <option value="Flexibility">
+                                   <option value="Hardware">
+                                   <option value="Help Desk">
+                                   <option value="Implementation">
+                                   <option value="Internet">
+                                   <option value="Information Systems">
+                                   <option value="Installation">
+                                   <option value="Integrated Technologies">
+                                   <option value="IT Manager">
+                                   <option value="IT Optimization">
+                                   <option value="IT Security">
+                                   <option value="IT Soft Skills">
+                                   <option value="IT Solutions">
+                                   <option value="IT Support">
+                                   <option value="Languages">
+                                   <option value="Logical Thinking">
+                                   <option value="Leadership">
+                                   <option value="Linux">
+                                   <option value="Management">
+                                   <option value="Messaging">
+                                   <option value="Methodology">
+                                   <option value="Metrics">
+                                   <option value="Microsoft Office">
+                                   <option value="Mobile Applications">
+                                   <option value="Motivation">
+                                   <option value="Networks">
+                                   <option value="Network Operations">
+                                   <option value="Networking">
+                                   <option value="Operating Systems">
+                                   <option value="Operations">
+                                   <option value="Organization">
+                                   <option value="Presentation">
+                                   <option value="Programming">
+                                   <option value="Problem Solving">
+                                   <option value="Product Development">
+                                   <option value="Product Support">
+                                   <option value="Product Management">
+                                   <option value="Product Training">
+                                   <option value="Project Management">
+                                   <option value="Repairs">
+                                   <option value="Reporting">
+                                   <option value="Search Engine Optimization (SEO)">
+                                   <option value="Security">
+                                   <option value="Servers">
+                                   <option value="Software">
+                                   <option value="Software Development">
+                                   <option value="Software Engineering">
+                                   <option value="Software Quality Assurance (QA)">
+                                   <option value="Storage">
+                                   <option value="Support">
+                                   <option value="Systems Software">
+                                   <option value="Team Building">
+                                   <option value="Team Oriented">
+                                   <option value="Teamwork">
+                                   <option value="Tech Skills Listed by Job">
+                                   <option value="Tech Support">
+                                   <option value="Technical">
+                                   <option value="Technology">
+                                   <option value="Technical Services">
+                                   <option value="Tech Skills Listed by Job">
+                                   <option value="Technical Support">
+                                   <option value="Technical Writing">
+                                   <option value="Testing">
+                                   <option value="Tools">
+                                   <option value="Time Management">
+                                   <option value="Technical Writing">
+                                   <option value="Training">
+                                   <option value="Troubleshooting">
+                                   <option value="UI / UX">
+                                   <option value="User Experience Design">
+                                   <option value="Virtualization">
+                                   <option value="Web">
+                                   <option value="Web Development">
+                                   <option value="Web Design">
+                               </datalist>
+                           </div>
+                           <div class="form-group">
+                           <label for="certi-id2">Certificate ID</label>
+                           <input type="text" class="form-control" placeholder="None">
+                           </div>
+                           <div class="form-group">
+                           <label for="Issuing2">Issuing Authority</label>
+                           <input type="text" class="form-control" placeholder="None">
+                           </div>
+                               <div class="form-group">
+                                 <label for="date-input" class="col-form-label">Certificate Earned Date</label>
+                                 <div class="col-10 date">
+                                   <input class="form-control" type="date" placeholder="yyyy-mm-dd" required>
+                                 </div>
+                               </div>
+                               <div class="form-group">
+                                 <label for="InputFile">Certificate Photo</label>
+                                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                 <small id="fileHelp" class="form-text text-muted">Attach certificates here</small>
+                               </div>
+				                        <button type="button" class="btn btn-next">Next</button>
+				                    </div>
+			                    </fieldset>
+                          <fieldset>
+                              <div class="form-top">
+                                <div class="form-top-left">
+                                  <h3>Step 8 / 9</h3>
+                                    <p>Job/Project Information:</p>
+                                </div>
+
+                                </div>
+                                <div class="form-bottom">
+
+                                    <div class="form-group">
+                                      <label for="ELevel">Type</label>
+                                      <select class="form-control">
+                                        <option>Full Time Job</option>
+                                        <option>Part Time Job</option>
+                                        <option>Project</option>
+                                        <option>Work from Home</option>
+                                        <option>None</option>
+                                      </select>
+                                      </div>
+                                      <div class="form-group">
+                                      <label for="Companyproj-name">Company or project name</label>
+                                      <input type="text" class="form-control" placeholder="None">
+                                      </div>
+
+                                        <div class="form-group">
+                                          <label for="description">Description</label>
+                                          <textarea class="form-control" rows="5"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="duration">Duration(weeks)</label>
+                                        <input type="text" class="form-control" placeholder="None">
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="salary">Salary</label>
+                                        <input type="text" class="form-control" placeholder="None">
+                                        </div>
+
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                          </fieldset>
+
+			                    <fieldset>
+		                        	<div class="form-top">
+		                        		<div class="form-top-left">
+		                        			<h3>Step 9 / 9</h3>
+		                            		<p>Area of Interest:</p>
+		                        		</div>
+
+		                            </div>
+		                            <div class="form-bottom">
+                                  <div class="form-group">
+                                    <label for="Select-medium">Areas</label>
+                                    <input class="form-control" list="aoi" name="aoi"/>
+                                    <datalist id="aoi">
+                                      <option value="MS">
+                                      <option value="MTech">
+                                      <option value="Entrepreneurship">
+                                      <option value="MBA">
+                                      <option value="None">
+                                    </datalist>
+                                    </div>
+                                </div>
+                                  <button type="submit" class="btn btn-next">Submit</button>
+
+
+				                    </div>
+			                    </fieldset>
+
+		                    </form>
+
+                      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <fieldset class="form-group">
-    <legend>Gender</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" name="optionsRadios" value="option1" checked>
-        Male
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" name="optionsRadios" value="option2">
-        Female
-      </label>
-    </div>
-    <div class="form-check disabled">
-    <label class="form-check-label">
-        <input type="radio" name="optionsRadios" value="option3">
-        Other
-      </label>
-    </div>
-  </fieldset>
-  <div class="form-group">
-    <label for="usn-input">USN</label>
-    <input type="text" class="form-control" placeholder="Enter USN">
-  </div>
-  <div class="form-group">
-   <label for="InputEmail1">Email address</label>
-   <input type="email" class="form-control"  placeholder="Enter email">
-   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
- </div>
- <div class="form-group">
-   <label for="phone-input">Phone No</label>
-   <input type="tel" class="form-control" placeholder="Phone No.">
- </div>
- <div class="form-group row">
- <label for="date-input" class="col-2 col-form-label">Date of Birth</label>
- <div class="col-10">
-   <input class="form-control" type="date" placeholder ="yyyy-mm-dd">
- </div>
- <br>
-</div>
-</div>
 
 
-<!-- Father's Details-->
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
 
- <h4><strong>Father's Details</strong></h4>
- <hr>
- <div class="div2">
- <div class="form-group row">
- <label for="text-input">Father's Name</label>
-  <div class="col-10">
-   <input class="form-control" type="text" placeholder="Father's name">
-   </div>
- </div>
- <div class="form-group">
-     <label for="Select1">Qualification</label>
-     <select class="form-control" >
-       <option>Doctrate</option>
-       <option>PG</option>
-       <option>UG</option>
-       <option>Higher Secondary</option>
-       <option>Diploma</option>
-       <option>Matriculation</option>
-       <option>Below Matriculation</option>
-       <option>No Formal Education</option>
-     </select>
-   </div>
-   <div class="form-group">
-       <label for="Select1">Occupation</label>
-       <select class="form-control" >
-         <option>Profesional</option>
-         <option>Business</option>
-         <option>Government Services</option>
-         <option>No Employement</option>
-       </select>
-     </div>
-<div class="form-group">
- <label for="text-input">Annual income</label>
- <input type="text" class="form-control"  placeholder="Enter anual income">
-</div>
-<div class="form-group">
- <label for="InputEmail1">Email address</label>
- <input type="email" class="form-control"  placeholder="Enter email">
- <small  class="form-text text-muted">We'll never share this email with anyone else.</small>
-</div>
-<div class="form-group">
-  <label for="phone-input">Phone No</label>
-  <input type="tel" class="form-control" placeholder="Phone No.">
-</div>
-</div>
-<br>
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
 
-<!--Mother's Details-->
+    </body>
 
-<h4><strong>Mother's Details</strong></h4>
-<hr>
-<div class="div3">
-<div class="form-group row">
-<label for="text-input">Mother's Name</label>
- <div class="col-10">
-  <input class="form-control" type="text" placeholder="Mother's name">
-  </div>
-</div>
-<div class="form-group">
-    <label for="Select1">Qualification</label>
-    <select class="form-control" >
-      <option>Doctrate</option>
-      <option>PG</option>
-      <option>UG</option>
-      <option>Higher Secondary</option>
-      <option>Diploma</option>
-      <option>Matriculation</option>
-      <option>Below Matriculation</option>
-      <option>No Formal Education</option>
-    </select>
-  </div>
-  <div class="form-group">
-      <label for="Select1">Occupation</label>
-      <select class="form-control" >
-        <option>Profesional</option>
-        <option>Business</option>
-        <option>Government Services</option>
-        <option>Home Maker</option>
-      </select>
-    </div>
-<div class="form-group">
-<label for="text-input">Annual income</label>
-<input type="text" class="form-control"  placeholder="Enter anual income">
-</div>
-<div class="form-group">
-<label for="InputEmail1">Email address</label>
-<input type="email" class="form-control"  placeholder="Enter email">
-<small id="emailHelp" class="form-text text-muted">We'll never share this email with anyone else.</small>
-</div>
-<div class="form-group">
- <label for="phone-input">Phone No</label>
- <input type="tel" class="form-control" placeholder="Phone No.">
-</div>
-</div>
-<br>
-
-<br>
-</div>
-<div class="link">
-<a href="index2.html">Continue</a>
-</div>
-</din>
-</div>
-</body>
 </html>
